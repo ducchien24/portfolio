@@ -63,8 +63,7 @@ const AboutContent = () => {
                       ]}
                       wrapper="span"
                       speed={50}
-                      repeat={Infinity}
-                      //
+                      repeat={Infinity} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                      //
                     />
                   </h4>
                 </div>

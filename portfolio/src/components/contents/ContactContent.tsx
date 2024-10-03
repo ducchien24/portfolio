@@ -6,17 +6,23 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ContactContent = () => {
 
-    const form = useRef();
+    const form = useRef<HTMLFormElement | null>(null);
 
-    const sendEmail = (e) => {
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-  
+      if (form.current)  {
       emailjs
         .sendForm('service_mwsnbdd', 'template_6dmpoxm', form.current, {
           publicKey: 'JQs1DuzHduzuWmGNd',
         })
         .then(
           () => {
+            if (!form.current) {
+                console.error('Form reference is null');
+                return; 
+              }
+            form.current.reset();
             console.log('SUCCESS!');
           
             toast.success('send email success!', {
@@ -30,13 +36,13 @@ const ContactContent = () => {
                 theme: "light",
                
                 });
-            form.current.reset();
+               
           },
           (error) => {
             console.log('FAILED...', error.text);
             toast.error('send email failed!', {
                 position: "top-center",
-                autoClose: 3000,
+                autoClose: 4000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
@@ -46,6 +52,7 @@ const ContactContent = () => {
                 });
           },
         );
+    }
     };
 
   return (

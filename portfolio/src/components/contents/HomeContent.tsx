@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 const HomeContent = () => {
-  const handScroll = (e: React.FormEvent<HTMLFormElement>) => {
+  const handScroll: (e: React.FormEvent<HTMLFormElement>) => void = (e) => {
     e.preventDefault()
     const myElement = document.querySelector("#about") as HTMLElement; 
 
@@ -47,8 +47,7 @@ const HomeContent = () => {
                     wrapper="span"
                     speed={50}
                     style={{ fontSize: "1.4em", display: "inline-block" }}
-                    repeat={Infinity}
-                  
+                    repeat={Infinity} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                  
                   />
                 </p>
               </div>
@@ -57,7 +56,7 @@ const HomeContent = () => {
           <div className="arlo_tm_arrow_wrap bounce anchor">
             <a href="#about">
               <i className="xcon-angle-double-down "
-                onClick={(e)=>{handScroll(e)}}
+                onClick={(e)=>{handScroll}}
               ></i>
             </a>
           </div>

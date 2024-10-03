@@ -6,6 +6,7 @@ interface Project {
     icon: JSX.Element;
     name: string;
     description: string; 
+    path:string;
   }
 const ProjectContent = () => {
     
@@ -17,30 +18,27 @@ const ProjectContent = () => {
                 ,
              name:'Book App',
              description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
-             , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`
-
+             , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`,
+             path:''
+             
         },
         {
             icon:<SiYoutubemusic />,
             name:'Music App',
              description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
-             , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`
+             , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`,
+              path:''
 
         },
         { 
             icon:<IoMdSettings />,
             name:'Book App',
             description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
-            , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`
+            , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`,
+             path:''
 
        },
-       {
-           icon:<SiYoutubemusic />,
-           name:'Music App',
-            description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
-            , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`
-
-       },
+     
        
 
     ]
@@ -53,24 +51,26 @@ const ProjectContent = () => {
                 <span>Completed projects</span>
             </div>
             <div className="list_wrap">
-                <ul>
+               <a href="https://tiktok-qwbvvgau7-nemo2.vercel.app/" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
+               <ul>
                   
-                    {project.map((item)=>
-                         <li key={item.name}>
-                         <div className="inner">
-                             {item.icon}
-                             <div className="title_service">
-                                 <h3>{item.name}</h3>
-                             </div>
-                             <div className="text">
-                                 <p>{item.description}</p>
-                             </div>
-                         </div>
-                     </li>
+                  {project.map((item)=>
+                       <li key={item.name}>
+                       <div className="inner">
+                           {item.icon}
+                           <div className="title_service">
+                               <h3>{item.name}</h3>
+                           </div>
+                           <div className="text">
+                               <p>{item.description}</p>
+                           </div>
+                       </div>
+                   </li>
 
-                    )}
-                   
-                </ul>
+                  )}
+                 
+              </ul>
+               </a>
             </div>
         </div>
     </div>
