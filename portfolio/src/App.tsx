@@ -4,8 +4,15 @@ import "@/style/plugins.scss";
 import { useEffect, useState } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
 import { ToastContainer } from "react-toastify";
-// import { ScrollReveal } from "@/ultil/ScrollReveal";
-function App() {
+import i18n from'@/ultil/i18n/index'; 
+import { useTranslation } from "react-i18next";
+import { Callback } from "i18next";
+interface changeLanguage{
+  changeLanguage: (lng: string,callback?: Callback) => void;
+
+}
+function App({changeLanguage}) {
+ 
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const scrollToTop = () => {
     window.scrollTo({
@@ -43,7 +50,7 @@ function App() {
 
   return (
     <>
-      <Portfolio />
+      <Portfolio changeLanguage={i18n.changeLanguage} />
       <div className={`arlo_tm_totop ${isVisible? 'opened' :''} `}
       onClick={scrollToTop} ></div>
 

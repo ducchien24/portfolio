@@ -69,17 +69,16 @@ const AboutContent = () => {
                 </div>
                 <div className="definition">
                   <p>
-                    Xin chào ! mình là <strong>Đức Chiến </strong>.
+                    Hello ! I'm <strong>Đức Chiến </strong>.
                   </p>
                   <br />
                   <p>
-                    Mình là một lập trình viên website. Hiện tại mình đang theo
-                  đuổi mảng Front-end, cụ thể ngôn ngữ chính mình dùng là JavaScript và TypeScript.
+                  I'm a web developer currently focusing on the front-end, specifically using the React library with JavaScript and TypeScript.
                   </p>
                   <br />
                   <p>
-                    Mình muốn có thể thành thạo mảng Front-end để có thể tìm hiểu thêm kiến thức về phần Back-end cũng như
-                    kiến thức để trở thành Web Developer toàn năng
+
+I want to become proficient in front-end development so that I can further explore back-end knowledge and work towards becoming a full-stack web developer.
                   </p>
                   <br />
                 </div>
