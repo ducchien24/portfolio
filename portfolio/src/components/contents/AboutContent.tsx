@@ -78,7 +78,7 @@ const AboutContent = () => {
                   <br />
                   <p>
 
-I want to become proficient in front-end development so that I can further explore back-end knowledge and work towards becoming a full-stack web developer.
+I want to become proficient in front-end development so that I want  further explore back-end knowledge and work towards becoming a full-stack web developer.
                   </p>
                   <br />
                 </div>
