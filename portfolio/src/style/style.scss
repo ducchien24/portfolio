@@ -15,9 +15,9 @@ $color_14: inherit;
 $font-family_1: "Open Sans";
 $font-family_2: "Montserrat";
 $background-color_1: #fff;
-$background-color_2: #041230;
+$background-color_2: rgb(114, 114, 9);
 $background-color_3: #E3872D;
-$background-color_4: rgba(7,23,55,.8);
+$background-color_4: rgba(241, 248, 187, 0.8);
 $background-color_5: #f6f7fd;
 $background-color_6: #d1d7db;
 $background-color_7: #333;
@@ -371,7 +371,7 @@ img.svg {
 				}
 				a {
 					text-decoration: none;
-					color: $color_2;
+					color: $color_3;
 					font-family: $font-family_2;
 					font-size: 16px;
 					font-weight: 500;
@@ -389,7 +389,7 @@ img.svg {
 						content: "";
 						height: 2px;
 						width: 0px;
-						background-color: $background-color_3;
+						background-color: $background-color_13;
 						top: 14px;
 						transform: translateY(-50%);
 						left: 100%;
@@ -401,7 +401,7 @@ img.svg {
 						transition: all .3s ease;
 					}
 					&:hover {
-						color: $color_3;
+						color: $color_13;
 						&:before {
 							width: 35px;
 						}
@@ -435,14 +435,14 @@ img.svg {
 					}
 					a {
 						text-decoration: none;
-						color: $color_2;
+						color: $color_3;
 						-webkit-transition: all .3s ease;
 						-moz-transition: all .3s ease;
 						-ms-transition: all .3s ease;
 						-o-transition: all .3s ease;
 						transition: all .3s ease;
 						&:hover {
-							color: $color_3;
+							color: $color_13;
 						}
 					}
 				}
@@ -695,7 +695,7 @@ img.svg {
 		box-sizing: border-box;
 	}
 	.overlay_image.hero {
-		background-image: url(../img/hero/2.jpg);
+		background-image: url(../assets/img/hero/6.jpg);
 	}
 	.overlay_color.hero {
 		background-color: $background-color_4;
@@ -2220,7 +2220,7 @@ img.svg {
 .arlo_tm_universal_box_wrap.particle {
 	height: 100vh;
 	position: relative;
-	background-image: url(../img/hero/2.jpg);
+	background-image: url(../assets/img/hero/6.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -2239,7 +2239,7 @@ img.svg {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url(../img/hero/2.jpg);
+	background-image: url(../assets/img/hero/6.jpg);
 	position: relative;
 	.overlay {
 		position: absolute;
@@ -2291,7 +2291,7 @@ img.svg {
 			z-index: 20;
 		}
 		.overlay_image.top {
-			background-image: url(../img/hero/2.jpg);
+			background-image: url(../assets/img/hero/6.jpg);
 		}
 		.overlay_color.top {
 			background-color: $background-color_11;

@@ -2,11 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import MyCV from '@/assets/cv/BuiDucChien-CV-Fe.pdf'
 import Parallax from "parallax-js";
+import { useTranslation } from 'react-i18next';
 
 const AboutContent = () => {
   
   const sceneEl = useRef(null);
-
+  const { t} = useTranslation();
   useEffect(() => {
     if(sceneEl&& sceneEl.current){
     const parallaxInstance = new Parallax(sceneEl.current, {
@@ -25,8 +26,8 @@ const AboutContent = () => {
       <div className="arlo_tm_about_wrapper_all">
         <div className="container">
           <div className="arlo_tm_title_holder">
-            <h3>About Me</h3>
-            <span>About me</span>
+            <h3>{t('About me')}</h3>
+            <span>{t('About me')}</span>
           </div>
           <div className="arlo_tm_about_wrap">
             <div className="author_wrap">
@@ -51,7 +52,7 @@ const AboutContent = () => {
               <div className="rightbox">
                 <div className="arlo_tm_mini_title_holder">
                   <h4>
-                    Hi there ... I'm a &nbsp;
+                    {t('Hi there ... I`m a')} &nbsp;
                     <TypeAnimation
                       sequence={[
                         "Freelancer ",
@@ -69,16 +70,16 @@ const AboutContent = () => {
                 </div>
                 <div className="definition">
                   <p>
-                    Hello ! I'm <strong>Đức Chiến </strong>.
+                   {t('Hello ! I am')}<strong>Đức Chiến </strong>.
                   </p>
                   <br />
                   <p>
-                  I'm a web developer currently focusing on the front-end, specifically using the React library with JavaScript and TypeScript.
+                 {t( 'about-1')}
                   </p>
                   <br />
                   <p>
-
-I want to become proficient in front-end development so that I want  further explore back-end knowledge and work towards becoming a full-stack web developer.
+                  {t( 'about-2')}
+                   
                   </p>
                   <br />
                 </div>
@@ -86,32 +87,32 @@ I want to become proficient in front-end development so that I want  further exp
                   <ul>
                     <li>
                       <span>
-                        <label>Birthday:</label> 24/02/2001
+                        <label>{t('Birthday')}:</label> 24/02/2001
                       </span>
                     </li>
                     <li>
                       <span>
-                        <label>City:</label> Q.Tân Bình, Hồ Chí Minh
+                        <label>{t('City')}: </label> Q.Tân Bình, Hồ Chí Minh
                       </span>
                     </li>
                     <li>
                       <span>
-                        <label>Major :</label> IT - Information technology
+                        <label> {t('Major')}:</label> IT - Information technology
                       </span>
                     </li>
                     <li>
                       <span>
-                        <label>Study:</label>Ha Noi University of Industry
+                        <label>{t('Study')}:</label>Ha Noi University of Industry
                       </span>
                     </li>
                     <li>
                       <span>
-                        <label>Degree:</label> Good
+                        <label>{t('Degree')}:</label> Good
                       </span>
                     </li>
                     <li>
                       <span>
-                        <label>Mail:</label>{" "}
+                        <label>Mail :</label>{" "}
                         <a href="mailto:chien24022001a@gmail.com">
                           chien24022001a&#64;gmail.com
                         </a>
@@ -124,7 +125,7 @@ I want to become proficient in front-end development so that I want  further exp
                   <ul>
                     <li>
                       <a href={MyCV} download>
-                        <span>Download CV</span>
+                        <span>{t('Download CV')}</span>
                       </a>
                     </li>
                     {/* <li className="anchor">

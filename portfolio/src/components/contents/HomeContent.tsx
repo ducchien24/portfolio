@@ -1,6 +1,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from 'react-i18next';
 const HomeContent = () => {
+  const { t} = useTranslation();
   const handScroll: (e: React.FormEvent<HTMLFormElement>) => void = (e) => {
     e.preventDefault()
     const myElement = document.querySelector("#about") as HTMLElement; 
@@ -28,13 +30,13 @@ const HomeContent = () => {
                 <img src="img/hero/img.jpg" alt="hero" />
               </div>
               <div className="name_holder">
-                <h3>
+                <h3 style={{color:'#E3872D'}}>
                   Bùi Đức <span>Chiến</span>
                 </h3>
               </div>
               <div className="text_typing">
-                <p>
-                  I'm a &nbsp;
+                <p style={{color:'#E3872D'}}>
+                 {t("I'm a")} &nbsp;
                   <TypeAnimation
                     sequence={[
                       "Fresher ",

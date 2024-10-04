@@ -4,7 +4,7 @@ import "@/style/plugins.scss";
 import { useEffect, useState } from "react";
 import { RiArrowUpLine } from "react-icons/ri";
 import { ToastContainer } from "react-toastify";
-import i18n from'@/ultil/i18n/index'; 
+
 import { useTranslation } from "react-i18next";
 import { Callback } from "i18next";
 import ScrollReveal from 'scrollreveal';
@@ -13,7 +13,7 @@ interface changeLanguage{
 
 }
 function App() {
- 
+  const { t , i18n} = useTranslation();
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const scrollToTop = () => {
     window.scrollTo({
@@ -42,6 +42,7 @@ function App() {
     delay: 400,
   });
   useEffect(() => {
+  
     sr.reveal(`.rightbox`);
     sr.reveal(`.bounce`, { delay: 600, distance: "100px", interval: 100 });
     sr.reveal(`.about__data,.text_typing`, { origin: "right" });
