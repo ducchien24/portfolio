@@ -19,8 +19,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "components/*": ["src/components/*"],
+      
     },
- 
+    "typeRoots": ["node_modules/@types", "src/@types"]
     // "noImplicitAny": true,
     // "strictNullChecks": true,
     // "strictFunctionTypes": true,

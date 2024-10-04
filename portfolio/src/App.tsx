@@ -7,11 +7,12 @@ import { ToastContainer } from "react-toastify";
 import i18n from'@/ultil/i18n/index'; 
 import { useTranslation } from "react-i18next";
 import { Callback } from "i18next";
+import ScrollReveal from 'scrollreveal';
 interface changeLanguage{
   changeLanguage: (lng: string,callback?: Callback) => void;
 
 }
-function App({changeLanguage}) {
+function App() {
  
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const scrollToTop = () => {
@@ -34,23 +35,23 @@ function App({changeLanguage}) {
   };
 }, []);
 
-  // const sr = ScrollReveal({
-  //   origin: "top",
-  //   distance: "60px",
-  //   duration: 3000,
-  //   delay: 400,
-  // });
-  // useEffect(() => {
-  //   sr.reveal(`.rightbox`);
-  //   sr.reveal(`.bounce`, { delay: 600, distance: "100px", interval: 100 });
-  //   sr.reveal(`.about__data,.text_typing`, { origin: "right" });
-  //   sr.reveal(`.leftbox,.name_holder`, { origin: "left" });
-  //   sr.reveal(`.list_wrap,.image_wrap`, { interval: 200 });
-  // }, []);
+  const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 3000,
+    delay: 400,
+  });
+  useEffect(() => {
+    sr.reveal(`.rightbox`);
+    sr.reveal(`.bounce`, { delay: 600, distance: "100px", interval: 100 });
+    sr.reveal(`.about__data,.text_typing`, { origin: "right" });
+    sr.reveal(`.leftbox,.name_holder`, { origin: "left" });
+    sr.reveal(`.list_wrap,.image_wrap`, { interval: 200 });
+  }, []);
 
   return (
     <>
-      <Portfolio changeLanguage={i18n.changeLanguage} />
+      <Portfolio />
       <div className={`arlo_tm_totop ${isVisible? 'opened' :''} `}
       onClick={scrollToTop} ></div>
 

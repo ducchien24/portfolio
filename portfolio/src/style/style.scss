@@ -1276,11 +1276,15 @@ img.svg {
 				.inner {
 					width: 100%;
 					height: auto;
-					clear: both;
-					float: left;
+					// clear: both;
+					// float: left;
+					display: flex;
+					flex-direction: column;
+					gap:12px;
 					position: relative;
 					box-shadow: 0 0 20px rgba(0,0,0,.1);
 					padding: 40px 40px 33px 40px;
+				 
 					top: 0px;
 					-webkit-transition: all .3s ease;
 					-moz-transition: all .3s ease;

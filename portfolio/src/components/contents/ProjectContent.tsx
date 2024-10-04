@@ -2,10 +2,13 @@ import React from 'react';
 import { IconContext } from 'react-icons';
 import { IoMdSettings } from "react-icons/io";
 import { SiYoutubemusic } from "react-icons/si";
+import { PiLinkDuotone } from "react-icons/pi";
+import { FaLocationArrow } from "react-icons/fa";
 interface Project {
     icon: JSX.Element;
     name: string;
     description: string; 
+    demo:string;
     path:string;
   }
 const ProjectContent = () => {
@@ -19,7 +22,8 @@ const ProjectContent = () => {
              name:'Book App',
              description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
              , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`,
-             path:''
+             demo:'https://tiktok-qwbvvgau7-nemo2.vercel.app/',
+             path:'',
              
         },
         {
@@ -27,7 +31,8 @@ const ProjectContent = () => {
             name:'Music App',
              description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
              , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`,
-              path:''
+             demo:'https://tiktok-qwbvvgau7-nemo2.vercel.app/',
+             path:'',
 
         },
         { 
@@ -35,7 +40,8 @@ const ProjectContent = () => {
             name:'Book App',
             description:`Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files 
             , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios`,
-             path:''
+            demo:'https://tiktok-qwbvvgau7-nemo2.vercel.app/',
+            path:'',
 
        },
      
@@ -51,7 +57,7 @@ const ProjectContent = () => {
                 <span>Completed projects</span>
             </div>
             <div className="list_wrap">
-               <a href="https://tiktok-qwbvvgau7-nemo2.vercel.app/" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none"}}>
+              
                <ul>
                   
                   {project.map((item)=>
@@ -64,13 +70,17 @@ const ProjectContent = () => {
                            <div className="text">
                                <p>{item.description}</p>
                            </div>
+                          <div>
+                          <div><a href={item.demo} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", display:'flex',alignItems:'center',gap:"4px"}}>Go to demo web <FaLocationArrow /></a></div>
+                          <div><a href={item.demo} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", display:'flex',alignItems:'center',gap:"4px"}}><p>Go to link github </p><PiLinkDuotone /></a></div>
+                          </div>
                        </div>
                    </li>
 
                   )}
                  
               </ul>
-               </a>
+               
             </div>
         </div>
     </div>
