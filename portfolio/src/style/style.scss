@@ -15,7 +15,7 @@ $color_14: inherit;
 $font-family_1: "Open Sans";
 $font-family_2: "Montserrat";
 $background-color_1: #fff;
-$background-color_2: rgb(114, 114, 9);
+$background-color_2: rgb(77, 77, 7);
 $background-color_3: #E3872D;
 $background-color_4: rgba(241, 248, 187, 0.8);
 $background-color_5: #f6f7fd;
@@ -28,7 +28,8 @@ $background-color_11: rgba(10,4,37,.85);
 $background-color_12: #fd4d4d;
 $background-color_13: #BC0127;
 $background-color_14: #333333;
-$background-color_15: rgba(4,18,48,.97);
+$background-color_15: rgb(77, 77, 7) ;
+$background-color_16: rgb(80, 80, 2) ;
 $border-bottom-color_1: #fff;
 
 /*@charset "utf-8";*/
@@ -458,7 +459,7 @@ img.svg {
 		text-align: center;
 		line-height: 30px;
 		background-color: $background-color_3;
-		display: inline-block;
+		// display: inline-block;
 		text-decoration: none;
 		z-index: 200;
 		-webkit-transition: all .3s ease;
@@ -2814,11 +2815,15 @@ img.svg {
 	}
 }
 .arlo_tm_mobile_menu_wrap {
+	
 	width: 100%;
 	height: auto;
-	clear: both;
-	float: left;
-	background-color: $background-color_15;
+	// clear: both;
+	// float: left;
+	display: flex;
+	flex-direction: column;
+
+	background-color: $background-color_16;
 	padding: 30px 20px;
 	display: none;
 	border-bottom: 1px solid rgba(0,0,0,.09);
@@ -2827,10 +2832,17 @@ img.svg {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	.mob_menu {
+		backdrop-filter: blur(10px);
 		width: 100%;
 		height: auto;
-		clear: both;
-		float: left;
+		// clear: both;
+		// float: left;
+		display: flex;
+		
+	    flex-direction: column;
+		align-items: center;
+		gap: 3px;
+		padding-top: 24px ;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -2838,17 +2850,22 @@ img.svg {
 			margin: 0px;
 			list-style-type: none;
 			>li {
-				margin: 0px 0px 5px 0px;
+				margin: 0px 0px 10px 0px;
+				
 				&:last-child {
 					margin-bottom: 0px;
 				}
 				a {
 					text-decoration: none;
-					color: $color_2;
+					color: $color_3;
 					font-family: $font-family_2;
 					font-weight: 600;
 					font-size: 19px;
+					&:hover {
+						color: $color_13; // Đổi màu chữ thành đỏ khi hover
+					}
 				}
+				
 			}
 		}
 	}
@@ -2858,6 +2875,9 @@ img.svg {
 		.leftbox {
 			padding-right: 0px;
 		}
+	}
+	.arlo_tm_resize{
+		display: inline-block;
 	}
 }
 @media (max-width: 1200px) {
@@ -3041,6 +3061,9 @@ img.svg {
 				font-size: 45px;
 			}
 		}
+	}
+	.arlo_tm_resize{
+		display: none;
 	}
 }
 @media (max-width: 480px) {

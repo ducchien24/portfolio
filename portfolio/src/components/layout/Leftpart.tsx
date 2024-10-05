@@ -5,17 +5,20 @@ import i18n from'@/ultil/i18n/index';
 interface Iprops{
 	isLeftPartClose:boolean,
 	setIsLeftPartClose: (value:boolean) => void;
+	setIsEnglish: (value:boolean) => void;
+	isEnglish:boolean
+	changeLanguage : (lng: string) => void;
   }
-const Leftpart = ({isLeftPartClose,setIsLeftPartClose}:Iprops) => {
-	const [isEnglish,setIsEnglish]=useState<boolean>(false)
+const Leftpart = ({isLeftPartClose,setIsLeftPartClose,isEnglish,setIsEnglish,changeLanguage}:Iprops) => {
+	
 	const { t } = useTranslation();
 	
    console.log(isEnglish)
    
 
-   const changeLanguage = (lng: string) => {
-	 i18n.changeLanguage(lng);
-   };
+//    const changeLanguage = (lng: string) => {
+// 	 i18n.changeLanguage(lng);
+//    };
   return (
     <div className={`${isLeftPartClose? "arlo_tm_leftpart_wrap opened":"arlo_tm_leftpart_wrap "}`}>
 			<div className="leftpart_inner">
