@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import MyCV from "@/assets/cv/BuiDucChien-CV-Fe.pdf";
 import Parallax from "parallax-js";
 import { useTranslation } from "react-i18next";
-import avata from '@/assets/img/hero/avata.png'
+import avata from '@/assets/img/hero/avata.jpeg'
 
 const AboutContent = () => {
   const sceneEl = useRef(null);

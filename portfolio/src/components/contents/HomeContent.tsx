@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
-import avata from '@/assets/img/hero/avata.png'
+import avata from '@/assets/img/hero/avata.jpeg'
 const HomeContent = () => {
   const { t } = useTranslation();
   const handScroll: (e: React.FormEvent<HTMLFormElement>) => void = (e) => {

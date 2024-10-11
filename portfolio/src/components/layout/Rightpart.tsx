@@ -5,9 +5,10 @@ interface Iprops {
    setIsLeftPartClose: (value:boolean) => void
 }
 const Rightpart = ({isLeftPartClose,setIsLeftPartClose}:Iprops) => {
+  console.log(isLeftPartClose)
   return (
-    <div className={`${isLeftPartClose? "arlo_tm_rightpart_wrap opened ":"arlo_tm_rightpart_wrap "}`}>
-    <div className="rightpart_inner">
+    <div className={`${isLeftPartClose? "arlo_tm_rightpart opened":"arlo_tm_rightpart"}`}>
+    <div className="rightpart_inner ">
         <HomeContent/>
         <AboutContent/>
         <SkillContext/>    

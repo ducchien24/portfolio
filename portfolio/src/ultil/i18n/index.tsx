@@ -49,9 +49,8 @@ i18n
 //Project
           "Book App":"Book App",
           "description_bookapp":"Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios",
-         "description_travelapp":"Build a landing page about tourism using react, taiwind css, hooks, react-router-dom, EmailJs so users can send messages to receive support",
-          
-         
+         "description_musicapp":"Build a small music listening website for entertainment with basic functions using js programming language",       
+         " Music App":" Music App",
           "Completed projects":'Completed projects',
           "Go to demo web ":'Go to demo web ',
           "Go to link github":'Go to link github',
@@ -107,8 +106,9 @@ i18n
           "Book App":"Web quản lý sách",
           "description_bookapp":"Xây dựng một trang web quản lý sách và người dùng với các chức năng: Đăng nhập, CRUD sách, người dùng (Tạo, Đọc, Cập nhật, Xóa), tải tệp lên, tải ảnh đại diện lên. Được xây dựng bằng: ReactJS, React Hook, thư viện CSS Ant Design, React Router DOM, Axios.",
           "Music App":"Web âm nhạc",
-          "description_travelapp":"Xây dựng landing page về du lịch sử dụng React, taiwind css, hooks, Reac-router-dom, EmailJs để người dùng có thể gửi tin nhắn nhận hỗ trợ",
+          "description_musicapp":"Xây dựng một trang web nghe nhạc nhỏ để giải trí với các chức năng cơ bản bằng ngôn ngữ lập trình js",
           
+
           "Completed projects":'Những dự án đã thực hiện',
           "Go to demo web ":'Xem demo dự án ',
           "Go to link github":'Đi tới github dự án',
