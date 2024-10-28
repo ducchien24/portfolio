@@ -29,7 +29,7 @@ const ProjectContent = () => {
         name: t("Music App"),
         description: t("description_musicapp"),
         demo: "https://mini-app-xi.vercel.app/",
-        path: "https://github.com/ducchien24/mussic-app",
+        path: "https://github.com/ducchien24/MusicAppSC",
       },
       
     // { id:2,
@@ -97,7 +97,7 @@ const ProjectContent = () => {
                             gap: "4px",
                           }}
                         >
-                          <p>{t("Go to link github ")}</p>
+                          <p>{t("Go to link github")}</p>
                           <PiLinkDuotone />
                         </a>
                       </div>

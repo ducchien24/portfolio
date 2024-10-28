@@ -49,7 +49,7 @@ i18n
 //Project
           "Book App":"Book App",
           "description_bookapp":"Build a book and user management website with functions: Log in, CRUD books, users(Create ,Read, Update, Delete), upload files , upload avt.Built with: reactjs, react-hook, antd css library, react-router-dom,axios",
-         "description_musicapp":"Build a small music listening website for entertainment with basic functions using js programming language",       
+         "description_musicapp":"Build a music website where users can perform the following functions: log in using GitHub or Google accounts (NextAuth), listen to music, like songs, comment, search for music and add songs to user-created playlists, Built with: NextJs, TypeScript , Next Auth, MUI Library, react-slick, wavesurfer, query-string, dayjs",       
          " Music App":" Music App",
           "Completed projects":'Completed projects',
           "Go to demo web ":'Go to demo web ',
@@ -106,7 +106,7 @@ i18n
           "Book App":"Web quản lý sách",
           "description_bookapp":"Xây dựng một trang web quản lý sách và người dùng với các chức năng: Đăng nhập, CRUD sách, người dùng (Tạo, Đọc, Cập nhật, Xóa), tải tệp lên, tải ảnh đại diện lên. Được xây dựng bằng: ReactJS, React Hook, thư viện CSS Ant Design, React Router DOM, Axios.",
           "Music App":"Web âm nhạc",
-          "description_musicapp":"Xây dựng một trang web nghe nhạc nhỏ để giải trí với các chức năng cơ bản bằng ngôn ngữ lập trình js",
+          "description_musicapp":"Xây dựng một trang web âm nhạc nơi người dùng có thể thực hiện các chức năng sau: đăng nhập bằng tài khoản GitHub hoặc Google (NextAuth), nghe nhạc, thích bài hát, bình luận, tìm kiếm nhạc và thêm bài hát vào danh sách phát do người dùng tạo, Được xây dựng với: NextJs, TypeScript , Next Auth, MUI Library, react-slick, wavesurfer, query-string, dayjs",
           
 
           "Completed projects":'Những dự án đã thực hiện',

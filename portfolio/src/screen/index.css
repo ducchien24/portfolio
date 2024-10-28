@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .arlo_tm_leftpart_wrap {
+        display: none;
+    }
+    .arlo_tm_rightpart {
+        padding-left: 0px;
+    }
+}
+@media (min-width: 769px) {
+    .arlo_tm_rightpart {
+        padding-left: 300px;
+    }
+}

@@ -3,6 +3,7 @@ import { Rightpart, Leftpart, Preloader } from "../components/layout/index";
 import { Value } from "sass";
 import { useTranslation } from 'react-i18next';
 import i18n from'@/ultil/i18n/index'; 
+import './index.css'
 const Portfolio = () => {
   const { t } = useTranslation();
   const [isLeftPartClose,setIsLeftPartClose]=useState<boolean>(false)
