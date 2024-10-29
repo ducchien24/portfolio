@@ -28,7 +28,7 @@ const ProjectContent = () => {
         icon: <IoMdSettings />,
         name: t("Music App"),
         description: t("description_musicapp"),
-        demo: "https://mini-app-xi.vercel.app/",
+        demo: "https://github.com/ducchien24/MusicAppSC",
         path: "https://github.com/ducchien24/MusicAppSC",
       },
       

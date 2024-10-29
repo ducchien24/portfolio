@@ -31,7 +31,7 @@ const HomeContent = () => {
               </div>
               <div className="name_holder">
                 <h3 style={{ color: "#E3872D" }}>
-                  Bùi Đức <span>Chiến</span>
+                {t("first name")} <span>{t("last name")}</span>
                 </h3>
               </div>
               <div className="text_typing">

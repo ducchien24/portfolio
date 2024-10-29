@@ -79,7 +79,7 @@ const AboutContent = () => {
                 <div className="definition">
                   <p>
                     {t("Hello ! I am")}
-                    <strong>Đức Chiến </strong>.
+                    <strong>{t("name")} </strong>.
                   </p>
                   <br />
                   <p>{t("about-1")}</p>
@@ -96,7 +96,7 @@ const AboutContent = () => {
                     </li>
                     <li>
                       <span>
-                        <label>{t("City")}: </label> Q.Tân Bình, Hồ Chí Minh
+                        <label>{t("City")}: </label> {t("city")}
                       </span>
                     </li>
                     <li>

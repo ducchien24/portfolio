@@ -21,7 +21,14 @@ i18n
 
 
           "I'm a":"I'm a",
+          "full name":"Bui Duc Chien",
+          "first name":"Bui Duc" ,
+          "last name" : "Chien",
 //About
+          'name':'Duc Chien',
+          "city": "Tan Binh, Ho Chi Minh",
+          "major":"IT - Information technology  ",
+          "study": "Ha Noi University of Industry",
           "About me":"About me",
           'Hi there ... I`m a':'Hi there ... I`m a',
           'Hello ! I am':'Hello ! I`m ',
@@ -77,7 +84,16 @@ i18n
           "contact":'Liên hệ',
 
            "I'm a":' Tôi là một ',
+           "full name": "Bùi Đức Chiến",
+           "first name":"Bùi Đức " ,
+           "last name" : "Chiến",
+           
 //About
+           'name':'Đức Chiến',
+           "city": "Q.Tân Bình, Hồ Chí Minh",
+           "major":"Công nghệ thông tin",
+           "study": "Đại học Công nghiệp Hà Nội",
+
           "About me":"Bản thân tôi",
           'Hi there ... I`m a':'Xin chào ... Tôi là một',
           'Hello ! I am':'Xin chào ! Tôi là ',

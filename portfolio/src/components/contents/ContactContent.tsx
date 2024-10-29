@@ -72,7 +72,7 @@ const ContactContent = () => {
                   <li>
                     <p>
                       <label>{t("Address")}:</label>
-                      <span>Q.Tân Bình, Hồ Chí Minh</span>
+                      <span>{t("city")}</span>
                     </p>
                   </li>
                   <li>
